@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Socket.io Test</title>
+    <style>
+        body {
+            background: #19191c;
+            margin: 0;
+            padding: 10px;
+            font-family: "Open Sans";
+        }
+        #messages {
+            height: 90vh;
+            width: 100%;
+            padding: 20px;
+            box-sizing: border-box;
+            background: #24242a;
+            color: lightgray;
+            overflow-y: visible;
+        }
+        #messages li {
+            list-style: none;
+            line-height: 2;
+            word-wrap: break-word;
+        }
+    </style>
+</head>
+<body>
+    <ul id="messages">
+        <li id="welcomeMessage">Connecting...</li>
+    </ul>
+
+    <form id="form">
+        <input id="input" type="text" placeholder="Send a message">
+        <button type="submit">Send</button>
+    </form>
+
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="./chat.js"></script>
+</script>
+</body>
+</html>
